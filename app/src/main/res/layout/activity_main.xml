@@ -21,14 +21,24 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@+id/bio_scroll">
-        <TextView
-                android:text="@string/bio"
+        <LinearLayout
+                android:orientation="vertical"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/bio_text"
-                style="@style/NameStyle"
-                android:paddingStart="@dimen/padding"
-                android:paddingEnd="@dimen/padding"
-                android:lineSpacingMultiplier="1.2"/>
+                android:layout_height="wrap_content">
+            <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" app:srcCompat="@android:drawable/star_big_on"
+                    android:id="@+id/imageView" android:paddingStart="@dimen/padding"
+                    android:paddingEnd="@dimen/padding" android:layout_marginTop="16dp"/>
+            <TextView
+                    android:text="@string/bio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/bio_text"
+                    style="@style/NameStyle"
+                    android:paddingStart="@dimen/padding"
+                    android:paddingEnd="@dimen/padding"
+                    android:lineSpacingMultiplier="1.2"/>
+        </LinearLayout>
     </ScrollView>
 </LinearLayout>
