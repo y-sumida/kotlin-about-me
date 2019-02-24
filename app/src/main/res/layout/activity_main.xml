@@ -44,11 +44,6 @@
                 android:orientation="vertical"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
-            <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" app:srcCompat="@android:drawable/star_big_on"
-                    android:id="@+id/imageView" android:paddingStart="@dimen/padding"
-                    android:paddingEnd="@dimen/padding" android:layout_marginTop="16dp"/>
             <TextView
                     android:text="@string/bio"
                     android:layout_width="match_parent"
