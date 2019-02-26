@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="myName" type="com.example.y_sumida.aboutme.MyName"/>
+
+    </data>
 <LinearLayout
               android:orientation="vertical"
               android:layout_width="match_parent"
               android:layout_height="match_parent">
 
     <TextView
-            android:text="@string/name"
+            android:text="@={myName.name}"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/name_text"
@@ -35,7 +39,8 @@
             android:id="@+id/nickname_text"
             android:visibility="gone"
             android:textAlignment="center"
-            style="@style/NameStyle"/>
+            style="@style/NameStyle"
+            android:text="@={myName.nickname}"/>
     <ImageView
             android:layout_width="match_parent"
             android:layout_height="wrap_content" app:srcCompat="@android:drawable/btn_star_big_on"
